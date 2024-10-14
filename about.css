@@ -3,8 +3,11 @@
     margin: 0px;
     box-sizing: border-box;
   }
-  body{
+  html, body {
+    width: 100%;
     overflow-x: hidden;
+  }
+  body{
     background-color: beige;
   }  
   
