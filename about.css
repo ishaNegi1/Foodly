@@ -1,165 +1,165 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-  }
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  body{
-    background-color: beige;
-  }  
-  
-  /* Navbar CSS */
-  .custom-toggler {
-    background-color: white;
-    border: 1px solid white;
-  }
-  .navbar-nav .nav-link{
-    color: white;
-    font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px;
-  }
-  .navbar-nav .nav-link:hover{
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-  }
-  .navbar-toggler {
-    z-index: 1001;
-  }
-  #navbar{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 1000;
-    background-color: transparent;
-  }
-  #navbar::before{
-    background-color: black;
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    opacity: 0.5;
-  }
-  
-  
-  /* main CSS*/
-  .bg-responsive {
-    height: 56vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff; 
-  }
-  .overlay {
-    background: rgba(0, 0, 0, 0.5); 
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    top: 0px;
-  }
-  .content {
-    z-index: 1;
-  }
-  #main::before {
-    background: url("assets/about.jpg") no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 50vh;
-    content: '';
-    opacity: 1;
-    z-index: -1;
-  }
-  #h1{
-    font-size: 60px;
-    font-weight: 800;
-    animation: heading 4s ease-in-out forwards;
-  }
-  @keyframes heading{
-    0%{
-        opacity: 0;
-        transform: translateY(-220px);
-      }
-    100%{
-        opacity: 1;
-      }
-  }
-  #mainH1{
-    font-size: 60px;
-    font-family: 'Yellowtail', cursive;
-    color: red;
-  }
-  #subH1{
-    font-size: 55px;
-    font-family: 'Yellowtail', cursive;
-    color: black;
-  }
-#para{
-    font-size: 25px;
-    font-family: 'Sacramento', cursive;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-.parallax{
-    background-image: url("assets/chefs.jpg");
-    min-height: 50vh; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .parallaxH2{
-    color: white;
-    font-size: 80px;
-    font-family: 'Pattaya', sans-serif;
-    }
-  .text{
-    z-index: 1;
-  }
-  .parallaxH1{
-    color: red;
-    font-size: 50px;
-    font-family: 'Yesteryear', cursive;
-  }
-  .overlay-1 {
-    background: rgba(0, 0, 0, 0.5); 
-    width: 100%;
-    height: 50vh;
-    position: absolute;
-    top: 1000;
-  }
-  #footer{
-    background-color: black;
-    height: 80px;
-    width: 100%;
-    opacity: 0.9;
-  }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: beige;
+}
 
-h5{
-    font-family: 'Yesteryear', cursive;
+/* Navbar CSS */
+.custom-toggler {
+  background-color: white;
+  border: 1px solid white;
 }
-.zoom-container{
-    overflow: hidden;
-    border-radius: 10px;
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+.navbar-nav .nav-link:hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.navbar-toggler {
+  z-index: 1001;
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+}
+#navbar::before {
+  background-color: black;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* main CSS*/
+.bg-responsive {
+  height: 56vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0px;
+}
+.content {
+  z-index: 1;
+}
+#main::before {
+  background: url("assets/about.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 50vh;
+  content: "";
+  opacity: 1;
+  z-index: -1;
+}
+#h1 {
+  font-size: 60px;
+  font-weight: 800;
+  animation: heading 3s ease-in-out forwards;
+}
+@keyframes heading {
+  0% {
+    opacity: 0;
+    transform: translateY(-220px);
   }
-  .zoom{
-    transition: transform 0.8s;
+  100% {
+    opacity: 1;
   }
-  .zoom:hover{
-      transform: scale(1.2);
-  }
+}
+#mainH1 {
+  font-size: 60px;
+  font-family: "Yellowtail", cursive;
+  color: red;
+}
+#subH1 {
+  font-size: 55px;
+  font-family: "Yellowtail", cursive;
+  color: black;
+}
+#para {
+  font-size: 25px;
+  font-family: "Sacramento", cursive;
+}
+.parallax {
+  background-image: url("assets/chefs.jpg");
+  min-height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallaxH2 {
+  color: white;
+  font-size: 80px;
+  font-family: "Pattaya", sans-serif;
+}
+.text {
+  z-index: 1;
+}
+.parallaxH1 {
+  color: red;
+  font-size: 50px;
+  font-family: "Yesteryear", cursive;
+}
+.overlay-1 {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 1000;
+}
+#footer {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  opacity: 0.9;
+}
+
+h5 {
+  font-family: "Yesteryear", cursive;
+}
+.zoom-container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.zoom {
+  transition: transform 0.8s;
+}
+.zoom:hover {
+  transform: scale(1.2);
+}

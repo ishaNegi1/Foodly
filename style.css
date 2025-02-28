@@ -1,79 +1,81 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
-.zoom-container{
+.zoom-container {
   overflow: hidden;
   border-radius: 10px;
 }
-.zoom{
+.zoom {
+  display: inline-block;
   transition: transform 0.8s;
 }
-.zoom:hover{
-    transform: scale(1.2);
+.zoom:hover {
+  transform: scale(1.2);
 }
 
-                       /* Navbar CSS */
+/* Navbar CSS */
 .custom-toggler {
   background-color: white;
   border: 1px solid white;
 }
-.navbar-nav .nav-link{
-    color: white;
-    font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px;
-  }
-  .navbar-nav .nav-link:hover{
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-  }
-  .navbar-toggler {
-    z-index: 1001;
-  }
-  #navbar{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    z-index: 1000;
-    background-color: transparent;
-  }
-  #navbar::before{
-    background-color: black;
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    opacity: 0.5;
-  }
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+.navbar-nav .nav-link:hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.navbar-toggler {
+  z-index: 1001;
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  z-index: 1000;
+  background-color: transparent;
+}
+#navbar::before {
+  background-color: black;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.5;
+}
 
-                        /* main CSS */
+/* main CSS */
 .bg-responsive {
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff; 
+  color: #ffffff;
 }
 .overlay {
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100%;
   position: absolute;
@@ -81,7 +83,7 @@ html, body {
 }
 .content {
   z-index: 1;
-  margin-top: 45px;
+  margin-top: 30px;
 }
 #main::before {
   background: url("assets/home-1.jpg") no-repeat center center/cover;
@@ -90,217 +92,276 @@ html, body {
   left: 0;
   width: 100%;
   min-height: 100vh;
-  content: '';
+  content: "";
   opacity: 1;
   z-index: -1;
 }
-#h1{
+#h1 {
+  font-family: "Pattaya", sans-serif;
   margin-top: 30px;
   font-size: 60px;
   font-weight: 800;
   animation: heading 4s ease-in-out forwards;
 }
-#para{
+#para {
   font-size: 20px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 600;
+  margin-top: 20px;
   animation: para 4s ease-in-out forwards;
 }
-#btn{
+#btn {
   color: red;
   border: 1px solid red;
+  margin-top: 20px;
   animation: button 4s ease-in-out forwards;
 }
 #btn:hover {
   color: white;
   background-color: red;
 }
-@keyframes heading{
-  0%{
+@keyframes heading {
+  0% {
     opacity: 0;
     transform: translateY(-220px);
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-@keyframes para{
-  0%{
+@keyframes para {
+  0% {
     opacity: 0;
     transform: translateY(-180px);
   }
-  20%{
+  20% {
     opacity: 0.3;
-   
   }
-  40%{
+  40% {
     opacity: 0.6;
-  
   }
-  70%{
+  70% {
     opacity: 0.8;
-    
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-@keyframes button{
-  0%{
+@keyframes button {
+  0% {
     transform: rotate(360deg);
     opacity: 0;
   }
-  50%{
-      opacity: 0.5;
+  50% {
+    opacity: 0.5;
   }
-  100%{
+  100% {
     transform: rotate(0deg);
     opacity: 1;
   }
 }
 
-                        /* sub-1 CSS  */
-#sub-1{
+/* sub-1 CSS  */
+#sub-1 {
   margin-bottom: 40px;
   margin-top: 40px;
 }
-#subDiv{
+#subDiv {
   flex-wrap: wrap;
   display: flex;
   align-items: center;
 }
-#h1Sub{
+#h1Sub {
   color: red;
-  font-family: 'Yellowtail', cursive;
+  font-family: "Yellowtail", cursive;
   font-size: 50px;
 }
-#paraSub{
-  font-family: 'Sacramento', cursive;
+#paraSub {
+  font-family: "Sacramento", cursive;
 }
-.parallax{
+.parallax {
   background-image: url("assets/table.jpg");
-  min-height: 50vh; 
+  min-height: 50vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallaxH1{
- color: red;
- font-size: 40px;
- font-weight: 800;
- font-family: 'Yesteryear', cursive;
+.parallaxH1 {
+  color: red;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Yesteryear", cursive;
 }
-.parallaxH2{
-color: white;
-font-size: 80px;
-font-family: 'Pattaya', sans-serif;
+.parallaxH2 {
+  color: white;
+  font-size: 70px;
+  font-family: "Pattaya", sans-serif;
 }
 .overlay-1 {
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 50vh;
   position: absolute;
   top: 1000;
 }
-.text{
+.text {
   z-index: 1;
 }
- 
-                         /* sub-2 CSS */
-#types{
+
+/* sub-2 CSS */
+#types {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.set{
+.set {
   height: 300px;
-  width: 350px;
+  width: 330px;
 }
-.sub2H2{
-  font-family: 'Rye', serif;
+.sub2H2 {
+  margin-left: 10px;
+  font-family: "Rye", serif;
 }
-.parallax-1{
+.parallax-1 {
   background-image: url("assets/restaurant.jpg");
-  min-height: 50vh; 
+  min-height: 50vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-                     /* sub-3 CSS */
-.menu{
+/* sub-3 CSS */
+.menu {
   height: 250px;
   width: 400px;
 }
-.check{
+.check {
+  margin-bottom: 10px;
   position: relative;
   text-align: center;
 }
-.name{
-  font-family: 'Pattaya', sans-serif;
-  cursor: pointer;
-  color: black;
-  font-size: 30px;
+.name {
   position: absolute;
   top: 40%;
-  left: 28%;
+  left: 27%;
   background-color: white;
-  height: 55px;
-  width: 150px;
+  height: 45px;
+  width: 155px;
   border-radius: 10px;
-  opacity: 0.6;
-  
+  opacity: 0.7;
+  box-shadow: 10px 10px 5px;
+}
+.courses {
+  margin-top: 4px;
+  font-family: "Pattaya", sans-serif;
+  cursor: pointer;
+  color: black;
+  font-size: 25px;
 }
 
-.parallax-2{
+.parallax-2 {
   background-image: url("assets/book.jpg");
-  min-height: 50vh; 
+  min-height: 50vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-                       /* sub-4 CSS */
-.parallax-3{
+/* sub-4 CSS */
+.parallax-3 {
   background-image: url("assets/footer.jpg");
-  min-height: 50vh; 
+  min-height: 50vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#footer{
+#footer {
   background-color: black;
   height: 80px;
   width: 100%;
   opacity: 0.9;
 }
-.custom{
+.custom {
   width: 60%;
   position: relative;
   left: 90px;
   top: -20px;
 }
-.label{
+.label {
   font-weight: 700;
   font-size: 25px;
   position: relative;
   top: 20px;
   color: white;
 }
-#final{
+#final {
   height: 450px;
 }
-.done{
+.done {
   margin-left: 35%;
-  background-color: red;
-  color: white;
-  border: 1px solid white;
-}
-.done:hover {
-  color: red;
   background-color: white;
+  color: red;
+  border: 1px solid red;
+  font-weight: 400;
+  transition: transform 0.8s;
+}
+
+.done:hover {
+  color: white;
+  background-color: red;
+  transform: scale(1.2);
+}
+.popup {
+  background-color: black;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+}
+.pop {
+  background-color: black;
+  opacity: 0.95;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  height: 40vh;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.popbtn {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  font-weight: 500;
+  transition: transform 0.8s;
+}
+
+.popbtn:hover {
+  color: white;
+  background-color: red;
+  transform: scale(1.2);
 }

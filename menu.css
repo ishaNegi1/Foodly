@@ -1,36 +1,37 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
 
-body{
+body {
   overflow-x: hidden;
   background-color: beige;
-}  
+}
 
 /* Navbar CSS */
 .custom-toggler {
   background-color: white;
   border: 1px solid white;
 }
-.navbar-nav .nav-link{
+.navbar-nav .nav-link {
   color: white;
   font-size: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 10px;
 }
-.navbar-nav .nav-link:hover{
+.navbar-nav .nav-link:hover {
   background-color: white;
   color: black;
   border-radius: 10px;
@@ -38,7 +39,7 @@ body{
 .navbar-toggler {
   z-index: 1001;
 }
-#navbar{
+#navbar {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -46,7 +47,7 @@ body{
   z-index: 1000;
   background-color: transparent;
 }
-#navbar::before{
+#navbar::before {
   background-color: black;
   content: "";
   height: 100%;
@@ -65,10 +66,10 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff; 
+  color: #ffffff;
 }
 .overlay {
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 50%;
   position: absolute;
@@ -84,34 +85,34 @@ body{
   left: 0;
   width: 100%;
   min-height: 50vh;
-  content: '';
+  content: "";
   opacity: 1;
   z-index: -1;
 }
-#h1{
+#h1 {
   font-size: 60px;
   font-weight: 800;
-  animation: heading 4s ease-in-out forwards;
+  animation: heading 3s ease-in-out forwards;
 }
-@keyframes heading{
-  0%{
-      opacity: 0;
-      transform: translateY(-220px);
-    }
-  100%{
-      opacity: 1;
-    }
+@keyframes heading {
+  0% {
+    opacity: 0;
+    transform: translateY(-220px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.done{
+.order {
   background-color: white;
   color: red;
   border: 1px solid red;
 }
-.done:hover {
+.order:hover {
   color: white;
   background-color: red;
 }
-#footer{
+#footer {
   background-color: black;
   height: 80px;
   width: 100%;
@@ -121,52 +122,98 @@ body{
   overflow: hidden;
   border-radius: 10px;
 }
-.zoom{
+.zoom {
   transition: transform 0.8s;
 }
-.zoom:hover{
-    transform: scale(1.2);
+.zoom:hover {
+  transform: scale(1.2);
 }
-.parallax{
+.parallax {
   background-image: url("assets/lunch-1.jpg");
-  min-height: 50vh; 
+  min-height: 50vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax-1{
+.parallax-1 {
   background-image: url("assets/drinks-1.jpg");
-  min-height: 50vh; 
+  min-height: 50vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax-2{
+.parallax-2 {
   background-image: url("assets/desserts-1.jpg");
-  min-height: 50vh; 
+  min-height: 50vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallaxH1{
+.parallaxH1 {
   color: white;
   font-size: 80px;
-  font-family: 'Pattaya', sans-serif;
+  font-family: "Pattaya", sans-serif;
 }
 .overlay-1 {
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 50vh;
   position: absolute;
   top: 1000;
 }
-.text{
+.text {
   z-index: 1;
 }
+.popup {
+  background-color: black;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+}
+.pop {
+  background-color: black;
+  opacity: 0.95;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  height: 40vh;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.popbtn {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  font-weight: 500;
+  transition: transform 0.8s;
+}
 
-
- 
-
+.popbtn:hover {
+  color: white;
+  background-color: red;
+  transform: scale(1.2);
+}
