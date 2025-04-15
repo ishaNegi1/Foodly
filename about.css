@@ -8,9 +8,6 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-body {
-  background-color: beige;
-}
 
 /* Navbar CSS */
 .custom-toggler {
