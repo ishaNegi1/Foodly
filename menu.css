@@ -169,7 +169,6 @@ body {
 }
 .popup {
   background-color: black;
-  opacity: 0.9;
   position: fixed;
   top: 0;
   left: 0;
@@ -180,7 +179,6 @@ body {
 }
 .pop {
   background-color: black;
-  opacity: 0.95;
   position: fixed;
   top: 0;
   left: 0;
